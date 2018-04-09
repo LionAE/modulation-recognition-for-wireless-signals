@@ -10,7 +10,7 @@ So, as we explain it before the call for deep learning architectures for solving
 
 # For the input dataset used is explained here
 The folder " Dataset_input" contains the different input datasets that can be used created by DeepSig.
-RadioML 2016.10A : A synthetic dataset, generated with GNU Radio, consisting of 11 modulations (8 digital and 3 analog) at varying SNR levels.
+RadioML 2016.10A : A synthetic dataset, generated with GNU Radio, consisting of 11 modulations (8 digitals and 3 analogs) at varying SNR levels.
 RML2016.10B : Larger Version of RadioML 2016.10a (including AM-SSB).
 RadioML 2016.04C : A synthetic dataset, generated with GNU Radio, consisting of 11 modulations. This is a variable-SNR dataset with moderate LO drift, light fading, and numerous different labeled SNR increments for use in measuring performance across different signal and noise power scenarios.
 
@@ -22,10 +22,12 @@ Concerning the input datasets that will be used in our first experiment is Radio
 THe folder "input_data" contains the necessary files in order to generate the input datasets. One can start from here and modify the script in order to generate datas in different conditions depending on the studies.
 
 # Architecture of Deep Neural Networks
-First, we clarify that in the beginning we will be using as framework "Keras" with Tesnorflow as back end, it's more suitable for fast developement in order to evaluate our designed architectures. For architectures, we will focus on 3 Types :
+First, we clarify that in the beginning we will be using as framework "Keras" with Tesnorflow as back end, it's more suitable for fast developement in order to evaluate our designed architectures. 
+For architectures, we will focus on 3 Types :
           - CNN (convolutionnal Neural Networks)
           - ResNet (CNN with residual connection)
           - CNN_LSTM (CNN followed by an LSTM network)
+          
 Details about the architectures, performance and comments can be found in each specific folder for this Architecture.
 
 Better architectures will be developped along the way addressing different issues, so stay Tuned for better work ! 
