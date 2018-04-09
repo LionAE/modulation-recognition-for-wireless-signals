@@ -9,14 +9,13 @@ from keras.layers.noise import GaussianNoise
 from keras.regularizers import *
 from keras.optimizers import adam
 import matplotlib.pyplot as plt
-import random, cPickle, keras, bz2
+import random, cPickle, keras
 import sys
 sys.path.append('../modulation')
 import seaborn as sb
 
 # load the RadioMl.10A data
-f = bz2.BZ2File("RML2016.10a_dict.dat.bz2")
-Xd = cPickle.load(f)
+Xd = cPickle.load(open("RML2016.10a_dict.dat", 'rb'))
 snrs,mods = map(lambda j: sorted(list(set(map(lambda x: x[j], Xd.keys())))), [1,0])
 X = []
 lbl = []
