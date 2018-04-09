@@ -24,8 +24,11 @@ THe folder "input_data" contains the necessary files in order to generate the in
 # Architecture of Deep Neural Networks
 First, we clarify that in the beginning we will be using as framework "Keras" with Tesnorflow as back end, it's more suitable for fast developement in order to evaluate our designed architectures. 
 For architectures, we will focus on 3 Types :
+
           - CNN (convolutionnal Neural Networks)
+	
           - ResNet (CNN with residual connection)
+	
           - CNN_LSTM (CNN followed by an LSTM network)
           
 Details about the architectures, performance and comments can be found in each specific folder for this Architecture.
