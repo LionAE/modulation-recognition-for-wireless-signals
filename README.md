@@ -1,4 +1,4 @@
-# modulation-recognition-for-wireless-signals
+# Modulation-Recognition-for-Wireless-Signals
 Algorithm for classification of Digital Modulation such as FSK, PSK, ASK, QAM ........
 
 # Short introduction about the problem of Modulation Recognition
