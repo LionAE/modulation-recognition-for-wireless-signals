@@ -143,7 +143,6 @@ def plot_confusion_matrix(cm, title='Confusion matrix', cmap=plt.cm.Blues, label
 # Plot confusion matrix
 test_Y_hat = model.predict(X_test, batch_size=batch_size)
 
-# %%调用库产生混淆矩阵
 pre_labels = []
 for x in test_Y_hat:
     tmp = np.argmax(x, 0)
@@ -179,7 +178,6 @@ plotcm.plot_confusion_matrix(cnf_matrix, classes=classes,
 plt.savefig('%s Normalized confusion matrix' % (name))
 plt.show()
 
-# %%自定义产生混淆矩阵
 conf = np.zeros([len(classes), len(classes)])
 confnorm = np.zeros([len(classes), len(classes)])
 for i in range(0, X_test.shape[0]):
@@ -190,7 +188,7 @@ for i in range(0, len(classes)):
     confnorm[i, :] = conf[i, :] / np.sum(conf[i, :])
 plot_confusion_matrix(confnorm, labels=classes, title='%s Confusion matrix' % (name))
 
-# %%Plot confusion matrix 画图
+# %%Plot confusion matrix 
 acc = {}
 kappa_dict = {}
 oa_dict = {}
